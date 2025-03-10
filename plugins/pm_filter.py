@@ -1475,7 +1475,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         for file_num, file in enumerate(files, start=1):
             links += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start={"pm_mode_" if pm_mode else ''}file_{ADMINS[0] if pm_mode else message.chat.id}_{file.file_id}>[{get_size(file.file_size)}] {formate_file_name(file.file_name)}</a></b>"""
     else:    
-        BLOGSPOT_URL = "https://shortnertestingurlblog.blogspot.com/p/15s-timer.html"
+        BLOGSPOT_URL = "https://shortnertestingurlblog.blogspot.com/p/bot.html"
         btn = [[InlineKeyboardButton(text=f"📁 {get_size(file.file_size)} ≽ {formate_file_name(file.file_name)}",url=f"{BLOGSPOT_URL}?file={file.file_id}")] 
 	       for file in files
 	      ]
